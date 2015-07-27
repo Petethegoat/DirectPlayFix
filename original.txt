@@ -1,0 +1,17 @@
+Nexus - The Jupiter Incident
+Windows Vista/7 Multiplayer Fix
+ - by Firedragonweb
+
+
+INSTRUCTIONS:
+- Copy that dll to a simple directory (e.G. C:\nexusfix\DVoiceEmul.dll)
+- open a command shell as administrator (start menu: type cmd, right-click "cmd.exe" and choose "Run as administrator")
+- type: cd %Windir%\Microsoft.NET\Framework\v2.0.50727
+- Register the dll - type: regasm C:\nexusfix\DvoiceEmul.dll /codebase
+- There should be some warnings and finally it should tell you that the types have been registered successfully.
+- Load up Nexus, disable voice communication in the multiplayer options
+- Now you can play Nexus MP. 
+
+
+
+- However, you should not move the dll from there once you registered it. If you wish to move or delete it, you must first "regasm C:\nexusfix\DvoiceEmul.dll /u" to unregister it.
